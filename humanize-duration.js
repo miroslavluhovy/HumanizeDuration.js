@@ -175,15 +175,14 @@
       millisecond: function(c) { return ["миллисекунд", "миллисекунда", "миллисекунды"][getRussianForm(c)]; }
     },
     sk: {
-       y: function (c) { return ['rok', 'roka', 'roky', 'rokov'][getSlovakForm(c)] },
-       mo: function (c) { return ['mesiac', 'mesiaca', 'mesiace', 'mesiacov'][getSlovakForm(c)] },
-       w: function (c) { return ['týždeň', 'týždňa', 'týždne', 'týždňov'][getSlovakForm(c)] },
-       d: function (c) { return ['deň', 'dňa', 'dni', 'dní'][getSlovakForm(c)] },
-       h: function (c) { return ['hodina', 'hodiny', 'hodiny', 'hodín'][getSlovakForm(c)] },
-       m: function (c) { return ['minúta', 'minúty', 'minúty', 'minút'][getSlovakForm(c)] },
-       s: function (c) { return ['sekunda', 'sekundy', 'sekundy', 'sekúnd'][getSlovakForm(c)] },
-       ms: function (c) { return ['milisekunda', 'milisekundy', 'milisekundy', 'milisekúnd'][getSlovakForm(c)] },
-       decimal: ','
+      year: function (c) { return ['rok', 'roka', 'roky', 'rokov'][getSlovakForm(c)] },
+      month: function (c) { return ['mesiac', 'mesiaca', 'mesiace', 'mesiacov'][getSlovakForm(c)] },
+      week: function (c) { return ['týždeň', 'týždňa', 'týždne', 'týždňov'][getSlovakForm(c)] },
+      day: function (c) { return ['deň', 'dňa', 'dni', 'dní'][getSlovakForm(c)] },
+      hour: function (c) { return ['hodina', 'hodiny', 'hodiny', 'hodín'][getSlovakForm(c)] },
+      minute: function (c) { return ['minúta', 'minúty', 'minúty', 'minút'][getSlovakForm(c)] },
+      second: function (c) { return ['sekunda', 'sekundy', 'sekundy', 'sekúnd'][getSlovakForm(c)] },
+      millisecond: function (c) { return ['milisekunda', 'milisekundy', 'milisekundy', 'milisekúnd'][getSlovakForm(c)] }
     },
     sv: {
       year: "år",

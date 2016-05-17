@@ -222,6 +222,17 @@
       ms: function (c) { return ['миллисекунд', 'миллисекунда', 'миллисекунды'][getSlavicForm(c)] },
       decimal: ','
     },
+    sk: {
+      y: function (c) { return ['rok', 'roka', 'roky', 'rokov'][getSlovakForm(c)] },
+      mo: function (c) { return ['mesiac', 'mesiaca', 'mesiace', 'mesiacov'][getSlovakForm(c)] },
+      w: function (c) { return ['týždeň', 'týždňa', 'týždne', 'týždňov'][getSlovakForm(c)] },
+      d: function (c) { return ['deň', 'dňa', 'dni', 'dní'][getSlovakForm(c)] },
+      h: function (c) { return ['hodina', 'hodiny', 'hodiny', 'hodín'][getSlovakForm(c)] },
+      m: function (c) { return ['minúta', 'minúty', 'minúty', 'minút'][getSlovakForm(c)] },
+      s: function (c) { return ['sekunda', 'sekundy', 'sekundy', 'sekúnd'][getSlovakForm(c)] },
+      ms: function (c) { return ['milisekunda', 'milisekundy', 'milisekundy', 'milisekúnd'][getSlovakForm(c)] },
+      decimal: ','
+    },
     uk: {
       y: function (c) { return ['років', 'рік', 'роки'][getSlavicForm(c)] },
       mo: function (c) { return ['місяців', 'місяць', 'місяці'][getSlavicForm(c)] },
@@ -434,6 +445,19 @@
       }
     }
     return destination
+  }
+
+  // Internal helper function for Slovak language.
+  function getSlovakForm (c) {
+    if (c === 1) {
+      return 0
+    } else if (Math.floor(c) !== c) {
+      return 1
+    } else if (c % 10 >= 2 && c % 10 <= 4 && c % 100 < 10) {
+      return 2
+    } else {
+      return 3
+    }
   }
 
   // Internal helper function for Czech language.
